@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6d7e8f9fa0b1c2d"]
+
+[ext_resource type="Script" path="res://Scripts/UI/InventoryUI.gd"]
+
+[node name="InventoryUI" type="CanvasLayer"]
+script = ExtResource("Script_0")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_left = 0.7
+anchors_top = 0.1
+anchors_right = 0.99
+anchors_bottom = 0.9
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 10.0
+margin_bottom = 10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" type="Label" parent="Panel/VBoxContainer"]
+text = "INVENTORY"
+theme_override_font_sizes/font_size = 24
+alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel/VBoxContainer"]
+columns = 5
+size_flags_vertical = 3
+
+[node name="WeightLabel" type="Label" parent="Panel/VBoxContainer"]
+text = "Weight: 0/50"

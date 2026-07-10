@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5f7a8b9c0d1e2f3"]
+
+[ext_resource type="Script" path="res://Scripts/AI/EnemyAI.gd"]
+
+[node name="Enemy" type="CharacterBody3D"]
+script = ExtResource("Script_0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = CapsuleShape3D.new()
+
+[node name="Head" type="Node3D" parent="."]
+
+[node name="RayCast3D" type="RayCast3D" parent="Head"]
+enabled = true

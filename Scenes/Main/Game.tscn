@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://b1t8dvhzwn1xvq"]
+
+[node name="Game" type="Node3D"]
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = SubResource("GDScript")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = CapsuleShape3D.new()
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+position = Vector3(0, 1.6, 0)
+
+[node name="HealthSystem" type="Node" parent="Player"]
+script = SubResource("GDScript")
+
+[node name="StaminaSystem" type="Node" parent="Player"]
+script = SubResource("GDScript")
+
+[node name="InventoryManager" type="Node" parent="Player"]
+script = SubResource("GDScript")
+
+[node name="Weapon" type="Node3D" parent="Player"]
+script = SubResource("GDScript")
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="Environment" type="Node3D" parent="World"]
+
+[node name="Lighting" type="Node3D" parent="World"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World/Lighting"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107)
+
+[node name="Enemies" type="Node3D" parent="World"]
+
+[node name="Items" type="Node3D" parent="World"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="UI"]
+anchors_right = 1.0
+anchors_bottom = 1.0
+script = SubResource("GDScript")
+
+[node name="HealthLabel" type="Label" parent="UI/HUD"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 200.0
+offset_bottom = 50.0
+text = "Health: 100/100"
+
+[node name="StaminaLabel" type="Label" parent="UI/HUD"]
+offset_left = 10.0
+offset_top = 60.0
+offset_right = 200.0
+offset_bottom = 100.0
+text = "Stamina: 100/100"
+
+[node name="AmmoLabel" type="Label" parent="UI/HUD"]
+offset_left = 10.0
+offset_top = 110.0
+offset_right = 200.0
+offset_bottom = 150.0
+text = "Ammo: 12/120"
+
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+script = SubResource("GDScript")
+
+[node name="PausePanel" type="Panel" parent="PauseMenu"]
+anchors_left = 0.0
+anchors_top = 0.0
+anchors_right = 1.0
+anchors_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/PausePanel"]
+anchors_left = 0.5
+anchors_top = 0.5
+anchors_right = 0.5
+anchors_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+
+[node name="ResumeButton" type="Button" parent="PauseMenu/PausePanel/VBoxContainer"]
+text = "Resume"
+size_flags_vertical = 3
+
+[node name="SaveButton" type="Button" parent="PauseMenu/PausePanel/VBoxContainer"]
+text = "Save Game"
+size_flags_vertical = 3
+
+[node name="LoadButton" type="Button" parent="PauseMenu/PausePanel/VBoxContainer"]
+text = "Load Game"
+size_flags_vertical = 3
+
+[node name="SettingsButton" type="Button" parent="PauseMenu/PausePanel/VBoxContainer"]
+text = "Settings"
+size_flags_vertical = 3
+
+[node name="MainMenuButton" type="Button" parent="PauseMenu/PausePanel/VBoxContainer"]
+text = "Main Menu"
+size_flags_vertical = 3
+
+[node name="QuitButton" type="Button" parent="PauseMenu/PausePanel/VBoxContainer"]
+text = "Quit Game"
+size_flags_vertical = 3
+
+[node name="GameManager" type="Node" parent="."]
+script = SubResource("GDScript")
+
+[node name="SaveLoadSystem" type="Node" parent="."]
+script = SubResource("GDScript")
+
+[node name="AudioManager" type="Node" parent="."]
+script = SubResource("GDScript")
+
+[node name="CraftingSystem" type="Node" parent="."]
+script = SubResource("GDScript")
+
+[node name="DialogueSystem" type="Node" parent="."]
+script = SubResource("GDScript")
+
+[node name="QuestSystem" type="Node" parent="."]
+script = SubResource("GDScript")
+
+[node name="EventBus" type="Node" parent="."]
+script = SubResource("GDScript")

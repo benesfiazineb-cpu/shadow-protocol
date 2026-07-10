@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://d123456789abcd"]
+
+[ext_resource type="Script" path="res://Scripts/Player/PlayerController.gd"]
+[ext_resource type="Script" path="res://Scripts/Player/HealthSystem.gd"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("Script_0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = CapsuleShape3D.new()
+
+[node name="Camera3D" type="Camera3D" parent="."]
+position = Vector3(0, 1.6, 0)
+current = true
+
+[node name="HealthSystem" type="Node" parent="."]
+script = ExtResource("Script_1")
+
+[node name="StaminaSystem" type="Node" parent="."]
+script = SubResource("GDScript")
+
+[node name="InventoryManager" type="Node" parent="."]
+script = SubResource("GDScript")
+
+[node name="Muzzle" type="Node3D" parent="."]
+position = Vector3(0.3, 1.5, -0.5)

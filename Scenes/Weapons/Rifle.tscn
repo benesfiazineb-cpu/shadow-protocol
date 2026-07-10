@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://f3g4a5b6c7d8e9fa"]
+
+[ext_resource type="Script" path="res://Scripts/Weapons/Rifle.gd"]
+
+[node name="Rifle" type="Node3D"]
+script = ExtResource("Script_0")

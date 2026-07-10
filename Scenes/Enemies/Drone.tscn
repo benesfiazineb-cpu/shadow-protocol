@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://e6g7h8i9j0k1l2m3"]
+
+[ext_resource type="Scene" path="res://Scenes/Enemies/Enemy.tscn"]
+
+[node name="PatrolDrone" parent="." instance=ExtResource("Scene_0")]
+script = SubResource("GDScript")
