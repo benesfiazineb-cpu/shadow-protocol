@@ -1,0 +1,49 @@
+{
+  "escape_lab": {
+    "id": "escape_lab",
+    "title": "Escape the Lab",
+    "description": "Find a way out of the underground research facility.",
+    "chapter": 1,
+    "objectives": [
+      "Find the exit door",
+      "Bypass security systems",
+      "Reach the surface"
+    ],
+    "reward_xp": 500,
+    "reward_items": {
+      "pistol_ammo": 30
+    },
+    "mandatory": true
+  },
+  "find_supplies": {
+    "id": "find_supplies",
+    "title": "Find Medical Supplies",
+    "description": "Search the ruined city for medical supplies to help survivors.",
+    "chapter": 2,
+    "objectives": [
+      "Search 3 locations",
+      "Collect 5 medkits",
+      "Return to settlement"
+    ],
+    "reward_xp": 300,
+    "reward_items": {
+      "scrap_metal": 50
+    },
+    "mandatory": false
+  },
+  "defeat_guardian": {
+    "id": "defeat_guardian",
+    "title": "Defeat the Guardian",
+    "description": "Eliminate the AI guardian protecting the data center.",
+    "chapter": 3,
+    "objectives": [
+      "Reach the data center",
+      "Defeat the guardian"
+    ],
+    "reward_xp": 1000,
+    "reward_items": {
+      "rifle_ammo": 100
+    },
+    "mandatory": true
+  }
+}

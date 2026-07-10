@@ -1,0 +1,73 @@
+{
+  "medkit": {
+    "name": "Medkit",
+    "description": "Restores 50 health points.",
+    "weight": 0.5,
+    "type": "consumable",
+    "stackable": true,
+    "max_stack": 5,
+    "value": 50
+  },
+  "pistol_ammo": {
+    "name": "Pistol Ammo",
+    "description": "9mm ammunition for pistols.",
+    "weight": 0.1,
+    "type": "ammo",
+    "stackable": true,
+    "max_stack": 100,
+    "value": 5
+  },
+  "rifle_ammo": {
+    "name": "Rifle Ammo",
+    "description": "7.62mm ammunition for rifles.",
+    "weight": 0.15,
+    "type": "ammo",
+    "stackable": true,
+    "max_stack": 80,
+    "value": 8
+  },
+  "shotgun_ammo": {
+    "name": "Shotgun Shells",
+    "description": "12 gauge shotgun ammunition.",
+    "weight": 0.2,
+    "type": "ammo",
+    "stackable": true,
+    "max_stack": 60,
+    "value": 10
+  },
+  "scrap_metal": {
+    "name": "Scrap Metal",
+    "description": "Useful crafting material.",
+    "weight": 0.3,
+    "type": "material",
+    "stackable": true,
+    "max_stack": 50,
+    "value": 10
+  },
+  "wire": {
+    "name": "Wire",
+    "description": "Electrical wiring for crafting.",
+    "weight": 0.2,
+    "type": "material",
+    "stackable": true,
+    "max_stack": 50,
+    "value": 8
+  },
+  "repair_kit": {
+    "name": "Repair Kit",
+    "description": "Repairs damaged equipment.",
+    "weight": 0.4,
+    "type": "consumable",
+    "stackable": true,
+    "max_stack": 3,
+    "value": 100
+  },
+  "combat_knife": {
+    "name": "Combat Knife",
+    "description": "A sharp blade for melee combat.",
+    "weight": 1.0,
+    "type": "weapon_melee",
+    "stackable": false,
+    "value": 250
+  }
+}
