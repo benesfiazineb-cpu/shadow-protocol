@@ -1,0 +1,24 @@
+# Godot specific files
+import/
+.import/
+export/
+.godot/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project specific
+*.tscn~
+*.gd~
+user://
+*.save
+*.tres~
